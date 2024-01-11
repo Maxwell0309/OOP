@@ -124,3 +124,4 @@ def new_component_menu():
             break
         else:
             print("Wrong input, must be a number between 1 and 9")
+
