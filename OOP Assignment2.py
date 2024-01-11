@@ -63,3 +63,29 @@ def view_circuit_kits():
                 print("Number is out of range, please try again.")
         except ValueError:
             print("Invalid input. Please enter a numeric value.")
+
+def manage_circuit_kit(kit):
+    print(kit)
+    print("1. SELL")
+    print("2. PACK")
+    print("3. UNPACK")
+    print("4. BACK")
+
+    while True:
+        select = input("Please enter a number in 1-4: ")
+        if select == "1":
+            print("Selling", kit)
+            number = input("Please enter number of " + kit + ": ")
+            print("Sold", kit, "X", number)
+        elif select == "2":
+            print("Packing", kit)
+            number = input("Please enter number of " + kit + ": ")
+            print("Packed", kit, "X", number)
+        elif select == "3":
+            print("Unpacking", kit)
+            number = input("Please enter number of " + kit + ": ")
+            print("Unpacked", kit, "X", number)
+        elif select == "4":
+            return
+        else:
+            print("Wrong select, please try again.")
