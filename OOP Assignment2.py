@@ -451,3 +451,69 @@ def create_sensor_circuit_kit_with_buzzer():
     print(switches[int(switch_choice)-1], "x", switch_quantity)
     print(batteries[int(battery_choice)-1], "x", battery_quantity)
     print(wires[int(wire_choice)-1], "x", wire_quantity)
+def create_sensor_circuit_kit_with_light_globe_and_switch():
+    print("SENSOR CIRCUIT KIT WITH LIGHT GLOBE AND SWITCH")
+
+    sensors = [
+        "5.0V Motion Sensor $3.90 x 6",
+        "6.0V Infrared Sensor $4.70 x 4",
+        "5.0V Dust Sensor $3.90 x 1"
+    ]
+    for i, sensor in enumerate(sensors, 1):
+        print(f"{i}. {sensor}")
+    sensor_choice = input("Please select the sensor index: ")
+
+    sensor_quantity = input(f"Please enter number of {sensors[int(sensor_choice)-1]}: ")
+
+    light_globes = [
+        "6.5V 240.0mA Warm Light Globe $3.50 x 11",
+        "7.2V 240.0mA Neutral Light Globe $3.60 x 8",
+        "7.6V 280.0mA Cool Light Globe $3.70 x 6",
+        "6.5V 240.0mA Cool Light Globe $3.50 x 4"
+    ]
+    for i, globe in enumerate(light_globes, 1):
+        print(f"{i}. {globe}")
+    globe_choice = input("Please select the light globe index: ")
+
+    globe_quantity = input(f"Please enter number of {light_globes[int(globe_choice)-1]}: ")
+
+    print("Select type of switch")
+    switches = [
+        "4.5V Push Switch $4.60 x 12",
+        "4.5V Toggle Switch $4.80 x 1"
+    ]
+    for i, switch in enumerate(switches, 1):
+        print(f"{i}. {switch}")
+    switch_choice = input("Please select the switch index: ")
+
+    switch_quantity = input(f"Please enter number of {switches[int(switch_choice)-1]}: ")
+
+    print("Select type of battery")
+    batteries = [
+        "1.2V AA Battery $2.60 x 12",
+        "1.5V AAA Battery $2.70 x 8",
+        "1.5V AA Battery $3.10 x 15",
+        "1.5V AAA Battery $3.10 x 1"
+    ]
+    for i, battery in enumerate(batteries, 1):
+        print(f"{i}. {battery}")
+    battery_choice = input("Please select the battery index: ")
+    battery_quantity = input(f"Please enter number of {batteries[int(battery_choice)-1]}: ")
+
+    print("Select type of wire")
+    wires = [
+        "40mm Wire $2.40 x 24",
+        "60mm Wire $3.20 x 56",
+        "80mm Wire $4.60 x 25"
+    ]
+    for i, wire in enumerate(wires, 1):
+        print(f"{i}. {wire}")
+    wire_choice = input("Please select the wire index: ")
+    wire_quantity = input(f"Please enter number of {wires[int(wire_choice)-1]}: ")
+
+    print("Creating Sensor Circuit Kit with Light Globe and Switch:")
+    print(sensors[int(sensor_choice)-1], "x", sensor_quantity)
+    print(light_globes[int(globe_choice)-1], "x", globe_quantity)
+    print(switches[int(switch_choice)-1], "x", switch_quantity)
+    print(batteries[int(battery_choice)-1], "x", battery_quantity)
+    print(wires[int(wire_choice)-1], "x", wire_quantity)
