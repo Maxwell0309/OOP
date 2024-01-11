@@ -89,3 +89,38 @@ def manage_circuit_kit(kit):
             return
         else:
             print("Wrong select, please try again.")
+
+def new_component_menu():
+    while True:
+        print("NEW COMPONENT MENU")
+        print("1. WIRE")
+        print("2. BATTERY")
+        print("3. SOLAR PANEL")
+        print("4. LIGHT GLOBE")
+        print("5. LED LIGHT")
+        print("6. SWITCH")
+        print("7. SENSOR")
+        print("8. BUZZER")
+        print("9. BACK")
+        choice = input("Please enter a number: ")
+
+        if choice == '1':
+            new_wire()
+        elif choice == '2':
+            new_battery()
+        elif choice == '3':
+            new_solar_panel()
+        elif choice == '4':
+            new_light_globe()
+        elif choice == '5':
+            new_led_light()
+        elif choice == '6':
+            new_switch()
+        elif choice == '7':
+            new_sensor()
+        elif choice == '8':
+            new_buzzer()
+        elif choice == '9':
+            break
+        else:
+            print("Wrong input, must be a number between 1 and 9")
