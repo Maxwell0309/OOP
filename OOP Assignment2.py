@@ -105,41 +105,41 @@ def manage_circuit_kit(kit):
         else:
             print("Wrong select, please try again.")
 
-def new_component_menu():
+
+def new_circuit_kit_menu():
     while True:
-        print("NEW COMPONENT MENU")
-        print("1. WIRE")
-        print("2. BATTERY")
-        print("3. SOLAR PANEL")
-        print("4. LIGHT GLOBE")
-        print("5. LED LIGHT")
-        print("6. SWITCH")
-        print("7. SENSOR")
-        print("8. BUZZER")
+        print("NEW CIRCUIT KIT MENU")
+        print("1. LIGHT GLOBE CIRCUIT KIT")
+        print("2. LED LIGHT CIRCUIT KIT")
+        print("3. SENSOR CIRCUIT KIT WITH LIGHT GLOBE")
+        print("4. SENSOR CIRCUIT KIT WITH LED LIGHT")
+        print("5. SENSOR CIRCUIT KIT WITH BUZZER")
+        print("6. SENSOR CIRCUIT KIT WITH LIGHT GLOBE AND SWITCH")
+        print("7. SENSOR CIRCUIT KIT WITH LED LIGHT AND SWITCH")
+        print("8. SENSOR CIRCUIT KIT WITH BUZZER AND SWITCH")
         print("9. BACK")
         choice = input("Please enter a number: ")
 
         if choice == '1':
-            new_wire()
+            create_light_globe_circuit_kit()
         elif choice == '2':
-            new_battery()
+            create_led_light_circuit_kit()
         elif choice == '3':
-            new_solar_panel()
+            create_sensor_circuit_kit_with_light_globe()
         elif choice == '4':
-            new_light_globe()
+            create_sensor_circuit_kit_with_led_light()
         elif choice == '5':
-            new_led_light()
+            create_sensor_circuit_kit_with_buzzer()
         elif choice == '6':
-            new_switch()
+            create_sensor_circuit_kit_with_light_globe_and_switch()
         elif choice == '7':
-            new_sensor()
+            create_sensor_circuit_kit_with_led_light_and_switch()
         elif choice == '8':
-            new_buzzer()
+            create_sensor_circuit_kit_with_buzzer_and_switch()
         elif choice == '9':
             break
         else:
             print("Wrong input, must be a number between 1 and 9")
-
 
 def create_light_globe_circuit_kit():
 
