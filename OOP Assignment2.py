@@ -1,3 +1,18 @@
+def get_user_input(prompt, valid_choices):
+    while True:
+        user_input = input(prompt)
+        if user_input in valid_choices:
+            return user_input
+        else:
+            print(f"Invalid input. Please enter one of the following: {valid_choices}")
+
+def select_component(components):
+    for i, component in enumerate(components, 1):
+        print(f"{i}. {component}")
+    choice = get_user_input("Please select an index: ", [str(i) for i in range(1, len(components) + 1)])
+    quantity = input(f"Please enter number of {components[int(choice) - 1]}: ")
+    return components[int(choice) - 1], quantity
+
 def main_menu():
 
     while True:
